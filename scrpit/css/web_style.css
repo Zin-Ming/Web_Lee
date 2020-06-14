@@ -61,6 +61,7 @@ html , body
 	height: 70%;
 	background-color:#2B2B2B;
 	margin: 10% auto;
+	position: relative;
 }
 
 .info_page
@@ -69,6 +70,7 @@ html , body
 	height: 70%;
 	background-color:#2B2B2B;
 	margin: 10% auto;
+	position: relative;
 	
 }
 
@@ -78,6 +80,7 @@ html , body
 	height: 70%;
 	background-color:#2B2B2B;
 	margin: 10% auto;
+	position: relative;
 }
 
 .effect_page
@@ -86,6 +89,19 @@ html , body
 	height: 70%;
 	background-color:#2B2B2B;
 	margin: 10% auto;
+	position: relative;
+}
+
+.index_lee_img , .index_lee_img2 , .index_lee_img3 , .index_lee_img4
+{
+	width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+	right: 5%;
+    background-image: url(../../img/index_lee.png);
+	background-repeat: no-repeat;
+	z-index: 100;
 }
 
 
