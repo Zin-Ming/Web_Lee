@@ -64,7 +64,7 @@ html , body
 {
 	width: 70%;
 	height: 70%;
-	background-color:#2B2B2B;
+	background-color:#E2E1E1;
 	margin: 10% auto;
 	position: relative;
 }
@@ -78,7 +78,7 @@ html , body
 {
 	width: 70%;
 	height: 70%;
-	background-color:#2B2B2B;
+	background-color:#E2E1E1;
 	margin: 10% auto;
 	position: relative;
 	
@@ -88,7 +88,7 @@ html , body
 {
 	width: 70%;
 	height: 70%;
-	background-color:#2B2B2B;
+	background-color:#E2E0E0;
 	margin: 10% auto;
 	position: relative;
 }
@@ -97,23 +97,96 @@ html , body
 {
 	width: 70%;
 	height: 70%;
-	background-color:#2B2B2B;
+	background-color:#E2E0E0;
 	margin: 10% auto;
 	position: relative;
 }
 
-.index_lee_img , .index_lee_img2 , .index_lee_img3 , .index_lee_img4
+.home_page_left_moun
 {
-	width: 30%;
-    height: 100%;
-    position: absolute;
-    top: 30%;
-	right: 5%;
-    background-image: url(../../img/index_lee.png);
-	background-repeat: no-repeat;
-	z-index: 100;
+	position: absolute;
+	top: 5%;
+	left: 0%;
 }
 
+.home_page_right_moun
+{
+	position: absolute;
+	top: 30%;
+	right: 5%;
+}
 
+.home_page_left_banbom
+{
+	position: absolute;
+	left: -3%;
+	top: 1px;
+}
 
+.home_page_right_banbom
+{
+	position: absolute;
+	top: 0%;
+	right: -2%;
+}
+
+.home_page_lee
+{
+	position: absolute;
+	top: 25%;
+	right: 20%;
+}
+
+.ingo_page_behind
+{
+	position: absolute;
+	left: 0%;
+	top: 10%;
+}
+
+.ingo_page_front
+{
+	position: absolute;
+	right: 0%;
+	top: 5%;
+}
+
+.ingo_page_lee
+{
+	position: absolute;
+	right: 10%;
+	bottom: 0%;
+}
+
+.write_page_behind
+{
+	position: absolute;
+}
+
+.effect_page_behind
+{
+	position: absolute;
+	bottom: 0%;
+}
+
+.effect_page_between
+{
+	position: absolute;
+	left: 30%;
+	bottom: 5%;
+}
+
+.effect_page_top
+{
+	position: absolute;
+	left: 30%;
+	top: 5%;
+}
+
+.effect_page_lee
+{
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+}
 

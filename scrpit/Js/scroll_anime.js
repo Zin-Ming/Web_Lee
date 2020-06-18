@@ -25,7 +25,10 @@ var index_scroll = new ScrollMagic.Scene({
 var index_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.to(".index_lee_img" , 1 , {right: "15%"}),
+			TweenMax.to(".home_page_lee" , 1 , {right: "25%"}),
+			TweenMax.to(".home_page_left_moun" , 1 , {left: "5%"}),
+			TweenMax.to(".home_page_left_banbom" , 1 , {left: "-5%"}),
+			TweenMax.to(".home_page_right_banbom" , 1 , {right: "0%"}),
 		]);
 
 
