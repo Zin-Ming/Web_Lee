@@ -297,10 +297,11 @@ html , body
 
 .chapter
 {
+	width: 30%;
 	position: absolute;
 	background-color: #f2f0ed;
-	top: -3%;
-	left: 35%;
+	top: -10%;
+	left: 33%;
 }
 
 .chapter_bg
@@ -441,6 +442,7 @@ html , body
 	margin-top: 20%;
 	margin-left: 5%;
 	display: flex;
+	
 }
 
 .chapter03_text h2
@@ -570,6 +572,126 @@ html , body
 .effect_text p
 {
 	font-size: 14px;
+}
+
+#filp
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -500;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-color: #e2e2e2;
+}
+
+
+@media screen and (max-width:700px)
+{
+	
+	.home_page
+	{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	
+	.home_page h1
+	{
+		top: 10%;
+	}
+	
+	.info_page
+	{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	
+	.info_text h3
+	{
+		font-size: 12px;
+	}
+	
+	.info_text p
+	{
+		font-size: 6px;
+	}
+	
+	.write_page
+	{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	
+	.chapter
+	{
+		width: 30%;
+		top: 2%;
+	}
+	
+	.chapter01_text , .chapter02_text , .chapter03_text , .chapter04_text
+	{
+		height: 80%;
+		
+	}
+	
+	.chapter01_text h2 , .chapter02_text h2 , .chapter03_text h2 , .chapter04_text h2
+	{
+		font-size: 12px;
+	}
+	
+	.chapter01_text p , .chapter02_text p , .chapter03_text p , .chapter04_text p
+	{
+		font-size: 8px;
+	}
+	
+	.effect_page
+	{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	
+	
+	.effect_text
+	{
+		top: 5%;
+		left: 5%;
+		width: 60%;
+	}
+	
+	
+	.effect_text h2
+	{
+		font-size: 12px;
+	}
+	
+	.effect_text p
+	{
+		font-size: 6px;
+	}
+	
+	#filp
+	{
+		z-index: -200;
+		opacity: 0;
+	}
+	
+
+	
+	
+}
+
+@media screen and (max-width:600px)
+{
+	#filp
+	{
+		z-index: 500;
+		opacity: 1;
+	}
 }
 
 

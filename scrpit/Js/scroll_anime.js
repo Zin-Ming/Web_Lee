@@ -60,6 +60,17 @@ var chapter04 = lottie.loadAnimation({
 	autoplay:true,	
 	
 });
+	
+var filp = lottie.loadAnimation({
+	
+	container:document.getElementById('filp'),
+	path:'https://assets9.lottiefiles.com/packages/lf20_NG7cd5.json',
+	rederer:'svg',
+	loop:true,
+	autoplay:true,	
+	
+});
+
 
 
 
