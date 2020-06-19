@@ -4,6 +4,10 @@
 /*------ lottie anime --------*/
 /*------ lottie anime --------*/
 
+$(window).on("load",function(){
+	
+	$('html , body').animate({scrollTop:0});
+	
 
 var index_leaf_anime = lottie.loadAnimation({
 	
@@ -171,6 +175,7 @@ var write_pall = new TimelineMax()
 	
 	.add([
 			TweenMax.from(".write_page_behind" , 1 , {top: "-5%" , opacity:0 , delay:2}),
+			TweenMax.from(".page_flex" , 1 , { opacity:0 , delay:2}),
 		]);
 
 
@@ -219,4 +224,49 @@ var effect = new ScrollMagic.Scene({
 .addTo(controller);
 
 
-
+$('.page01').click(function(){
+	
+	$('.chapter01').addClass('fade_in');
+	$('.chapter').addClass('blur');
+	$('.chapter_bg').addClass('fade_in');
+	
+});
+	
+$('.page02').click(function(){
+	
+	$('.chapter02').addClass('fade_in');
+	$('.chapter').addClass('blur');
+	$('.chapter_bg').addClass('fade_in');
+	
+});
+	
+$('.page03').click(function(){
+	
+	$('.chapter03').addClass('fade_in');
+	$('.chapter').addClass('blur');
+	$('.chapter_bg').addClass('fade_in');
+	
+});
+	
+$('.page04').click(function(){
+	
+	$('.chapter04').addClass('fade_in');
+	$('.chapter').addClass('blur');
+	$('.chapter_bg').addClass('fade_in');
+	
+});
+	
+	
+$('.chapter_bg').click(function(){
+	
+	$('.chapter01').removeClass('fade_in');
+	$('.chapter02').removeClass('fade_in');
+	$('.chapter03').removeClass('fade_in');
+	$('.chapter04').removeClass('fade_in');
+	$('.chapter').removeClass('blur');
+	$('.chapter_bg').removeClass('fade_in');
+	
+});
+	
+	
+});
