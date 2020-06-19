@@ -45,19 +45,19 @@
 				<div class="write_page" id="write">
 					<img class="write_page_behind" src="img/write/behind.png" width="100%" alt="" draggable="false">
 					<div class="page_flex">
-						<div class="page page01">
+						<div class="page page01" @click="btn_show(1)">
 							<img src="img/write/web_lee_write_page_bg.png" width="80%" alt="" draggable="false">
 							<p>錦瑟</p>
 						</div>
-						<div class="page page02">
+						<div class="page page02" @click="btn_show(2)">
 							<img src="img/write/web_lee_write_page_bg.png" width="80%" alt="" draggable="false">
 							<p>夜雨</p>
 						</div>
-						<div class="page page03">
+						<div class="page page03" @click="btn_show(3)">
 							<img src="img/write/web_lee_write_page_bg.png" width="80%" alt="" draggable="false">
 							<p>無題</p>
 						</div>
-						<div class="page page04">
+						<div class="page page04" @click="btn_show(4)">
 							<img src="img/write/web_lee_write_page_bg.png" width="80%" alt="" draggable="false">
 							<p>遇雪</p>
 						</div>
@@ -67,11 +67,11 @@
 							<img class="chapter01_banbom" src="img/write/page01/write_page01_banbom.png" width="90%" alt="" draggable="false">
 							<img class="chapter01_moun" src="img/write/page01/write_page01_moun.png" width="50%" alt="" draggable="false">
 							<div class="chapter01_text">
-								<h2>錦瑟</h2>
-								<p>錦瑟無端五十弦，一弦一柱思華年。</p>
-								<p>庄生曉夢迷蝴蝶，望帝春心托杜鵑。</p>
-								<p>滄海月明珠有淚，藍田日暖玉生煙。</p>
-								<p>此情可待成追憶，只是當時已惘然。</p>
+								<h2>{{ title }}</h2>
+								<p>{{ p1 }}</p>
+								<p>{{ p2 }}</p>
+								<p>{{ p3 }}</p>
+								<p>{{ p4 }}</p>
 							</div>
 						</div>
 					<div class="chapter chapter02">
@@ -79,11 +79,11 @@
 							<img class="chapter02_bottom" src="img/write/page02/write_page02_bottom.png" width="100%" alt="" draggable="false">
 							<img class="chapter02_top" src="img/write/page02/write_page02_top.png" width="100%" alt="" draggable="false">
 							<div class="chapter02_text">
-								<h2>夜雨寄北</h2>
-								<p>君問歸期未有期。</p>
-								<p>巴山夜雨漲秋池。</p>
-								<p>何當共剪西窗燭。</p>
-								<p>卻話巴山夜雨時。</p>
+								<h2>{{ title }}</h2>
+								<p>{{ p1 }}</p>
+								<p>{{ p2 }}</p>
+								<p>{{ p3 }}</p>
+								<p>{{ p4 }}</p>
 							</div>
 					</div>
 					<div class="chapter chapter03">
