@@ -16,6 +16,49 @@ var index_leaf_anime = lottie.loadAnimation({
 });
 
 
+var chapter01 = lottie.loadAnimation({
+	
+	container:document.getElementById('chapter01'),
+	path:'https://assets2.lottiefiles.com/packages/lf20_ge4Z0u.json',
+	rederer:'svg',
+	loop:true,
+	autoplay:true,	
+	
+});
+
+var chapter02 = lottie.loadAnimation({
+	
+	container:document.getElementById('chapter02'),
+	path:'https://assets1.lottiefiles.com/packages/lf20_fm1tn5.json',
+	rederer:'svg',
+	loop:true,
+	autoplay:true,	
+	
+});
+
+var chapter03 = lottie.loadAnimation({
+	
+	container:document.getElementById('chapter03'),
+	path:'https://assets10.lottiefiles.com/packages/lf20_t9IfWI.json',
+	rederer:'svg',
+	loop:true,
+	autoplay:true,	
+	
+});
+
+
+var chapter04 = lottie.loadAnimation({
+	
+	container:document.getElementById('chapter04'),
+	path:'https://assets5.lottiefiles.com/packages/lf20_Sc8BrO.json',
+	rederer:'svg',
+	loop:true,
+	autoplay:true,	
+	
+});
+
+
+
 
 /*------ lottie anime --------*/
 /*------ lottie anime --------*/

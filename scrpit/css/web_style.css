@@ -229,6 +229,253 @@ html , body
 	position: absolute;
 }
 
+.page_flex
+{
+	position: relative;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	top: 40%;
+	margin: 0 auto;
+}
+
+.page
+{
+	position: relative;
+	width: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-out;
+}
+
+.page:hover
+{
+	transform: scale(1.1);
+}
+
+.page img
+{
+	user-select: none;
+	position: absolute;
+	width: 100%;
+}
+
+.page p
+{
+	position: relative;
+	writing-mode:vertical-lr;
+	width: 100%;
+	font-size: 30px;
+}
+
+.chapter
+{
+	position: absolute;
+	background-color: #f2f0ed;
+	top: -3%;
+	left: 35%;
+}
+
+.chapter01_banbom
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chapter01_moun
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.chapter01_text
+{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 0;
+	right: 0;
+	margin: 10% 20% 0 0;
+	display: flex;
+}
+
+.chapter01_text h2
+{
+	writing-mode:vertical-lr;
+	font-size: 16px;
+	padding-top: 5%;
+	color:#494949;
+}
+
+.chapter01_text p
+{
+	font-size: 12px;
+	writing-mode:vertical-lr;
+	line-height: 2px;
+	color:#494949;
+}
+
+.chapter01_text p:nth-child(odd)
+{
+	padding-top: 5%;
+}
+
+.chapter02_bottom
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.chapter02_top
+{
+	position: absolute;
+	top: 10%;
+	opacity: 0.8;
+
+}
+
+.chapter02_text
+{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 0;
+	right: 0;
+	margin: 30% 20% 0 0;
+	display: flex;
+}
+
+.chapter02_text h2
+{
+	writing-mode:vertical-lr;
+	font-size: 16px;
+	padding-top: 5%;
+	
+}
+
+.chapter02_text p
+{
+	font-size: 12px;
+	writing-mode:vertical-lr;
+	line-height: 2px;
+
+}
+
+.chapter02_text p:nth-child(odd)
+{
+	padding-top: 5%;
+}
+
+.chapter03_bottom
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.chapter03_between
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+.chapter03_top
+{
+	position: absolute;
+	top: 10%;
+	opacity: 0.8;
+
+}
+
+.chapter03_text
+{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 0;
+	margin-top: 20%;
+	margin-left: 5%;
+	display: flex;
+}
+
+.chapter03_text h2
+{
+	writing-mode:vertical-lr;
+	font-size: 16px;
+	padding-top: 5%;
+	
+}
+
+.chapter03_text p
+{
+	font-size: 12px;
+	writing-mode:vertical-lr;
+	line-height: 2px;
+
+}
+
+.chapter03_text p:nth-child(odd)
+{
+	padding-top: 5%;
+}
+
+.chapter04
+{
+	background-color:#F0F0F0;
+}
+
+.chapter04_bottom
+{
+	position: absolute;
+	bottom: 0;
+}
+
+.chapter04_top
+{
+	position: absolute;
+	top: 30%;
+
+}
+
+.chapter04_text
+{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 0;
+	margin-top: 20%;
+	margin-left: 15%;
+	display: flex;
+}
+
+.chapter04_text h2
+{
+	writing-mode:vertical-lr;
+	font-size: 14px;
+	padding-top: 5%;
+	
+}
+
+.chapter04_text p
+{
+	font-size: 12px;
+	writing-mode:vertical-lr;
+	line-height: 2px;
+
+}
+
+.chapter04_text p:nth-child(odd)
+{
+	padding-top: 5%;
+}
+
+
 .effect_page_behind
 {
 	position: absolute;
@@ -275,5 +522,7 @@ html , body
 {
 	font-size: 14px;
 }
+
+
 
 
