@@ -153,7 +153,6 @@ var index = new ScrollMagic.Scene({
 })
 
 .setTween(index_pall)
-.addIndicators()
 .addTo(controller);
 
 
@@ -179,7 +178,6 @@ var info = new ScrollMagic.Scene({
 
 
 .setTween(info_pall)
-.addIndicators()
 .addTo(controller);
 
 var write_pall = new TimelineMax()
@@ -202,7 +200,6 @@ var write = new ScrollMagic.Scene({
 })
 
 .setTween(write_pall)
-.addIndicators()
 .addTo(controller);
 
 
@@ -231,7 +228,6 @@ var effect = new ScrollMagic.Scene({
 })
 
 .setTween(effect_pall)
-.addIndicators()
 .addTo(controller);
 
 
