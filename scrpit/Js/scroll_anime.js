@@ -1,4 +1,28 @@
 // JavaScript Document
+
+/*------ lottie anime --------*/
+/*------ lottie anime --------*/
+/*------ lottie anime --------*/
+
+
+var index_leaf_anime = lottie.loadAnimation({
+	
+	container:document.getElementById('home_page'),
+	path:'https://assets2.lottiefiles.com/packages/lf20_nNaGdk.json',
+	rederer:'svg',
+	loop:false,
+	autoplay:false,	
+	
+});
+
+
+
+/*------ lottie anime --------*/
+/*------ lottie anime --------*/
+/*------ lottie anime --------*/
+
+
+
 var controller = new ScrollMagic.Controller();
 
 var scroll_anime = new TimelineMax()
@@ -31,7 +55,7 @@ var index_pall = new TimelineMax()
 			TweenMax.to(".home_page_right_banbom" , 1 , {right: "0%"}),
 		]);
 
-
+	
 
 var index = new ScrollMagic.Scene({
 	
@@ -43,6 +67,33 @@ var index = new ScrollMagic.Scene({
 	
 })
 
+.on("enter" , function(){
+
+	index_leaf_anime.setDirection(1);
+	index_leaf_anime.play();
+	$(".home_page_left_moun").addClass("fade_in");
+	$(".home_page_right_moun").addClass("fade_in");
+	$(".home_page_left_banbom").addClass("fade_in");
+	$(".home_page_right_banbom").addClass("fade_in");
+	$(".home_page_lee").addClass("fade_in");
+	$(".home_text").addClass("fade_in");
+	
+	
+})
+
+.on("leave" , function(){
+	
+	index_leaf_anime.setDirection(-1);
+	index_leaf_anime.play();
+	
+	$(".home_page_left_moun").removeClass("fade_in");
+	$(".home_page_right_moun").removeClass("fade_in");
+	$(".home_page_left_banbom").removeClass("fade_in");
+	$(".home_page_right_banbom").removeClass("fade_in");
+	$(".home_page_lee").removeClass("fade_in");
+	$(".home_text").removeClass("fade_in");
+})
+
 .setTween(index_pall)
 .addIndicators()
 .addTo(controller);
@@ -52,10 +103,11 @@ var index = new ScrollMagic.Scene({
 var info_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.to(".index_lee_img2" , 1 , {right: "15%", delay:2}),
+			TweenMax.to(".info_page_behind" , 1 , {left: "0%", opacity:1 , delay:1}),
+			TweenMax.to(".info_page_front" , 1 , {right: "0%", opacity:1, delay:1}),
+			TweenMax.to(".info_page_lee" , 1 , {right: "10%" , delay:1}),
+			TweenMax.to(".info_text" , 1 , {opacity:1, delay:1}),
 		]);
-
-
 
 var info = new ScrollMagic.Scene({
 	
@@ -67,6 +119,7 @@ var info = new ScrollMagic.Scene({
 	
 })
 
+
 .setTween(info_pall)
 .addIndicators()
 .addTo(controller);
@@ -74,7 +127,7 @@ var info = new ScrollMagic.Scene({
 var write_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.to(".index_lee_img3" , 1 , {right: "15%", delay:4}),
+			TweenMax.from(".write_page_behind" , 1 , {top: "-5%" , opacity:0 , delay:2}),
 		]);
 
 
@@ -99,7 +152,11 @@ var write = new ScrollMagic.Scene({
 var effect_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.to(".index_lee_img4" , 1 , {right: "15%", delay:8}),
+			TweenMax.from(".effect_page_behind" , 1 , {bottom:"-10%" , opacity:0, delay:8}),
+			TweenMax.from(".effect_page_between" , 1 , {left:"10%", opacity:0, delay:8}),
+			TweenMax.from(".effect_page_top" , 1 , {left:"10%", opacity:0, delay:8}),
+			TweenMax.from(".effect_page_lee" , 1 , {right:"-10%", opacity:0, delay:8}),
+			TweenMax.from(".effect_text" , 1 , { opacity:0, delay:8}),
 		]);
 
 
