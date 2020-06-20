@@ -152,6 +152,7 @@ var index = new ScrollMagic.Scene({
 	$(".home_text").removeClass("fade_in");
 })
 
+
 .setTween(index_pall)
 .addTo(controller);
 
@@ -160,10 +161,10 @@ var index = new ScrollMagic.Scene({
 var info_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.to(".info_page_behind" , 1 , {left: "0%", opacity:1 , delay:1}),
-			TweenMax.to(".info_page_front" , 1 , {right: "0%", opacity:1, delay:1}),
-			TweenMax.to(".info_page_lee" , 1 , {right: "10%" , delay:1}),
-			TweenMax.to(".info_text" , 1 , {opacity:1, delay:1}),
+			TweenMax.from(".info_page_behind" , 1 , { left: "10%", opacity:0 , delay:1}),
+			TweenMax.from(".info_page_front" , 1 , {transform:"scale(1.2)" , right: "0%", opacity:0, delay:1.2}),
+			TweenMax.from(".info_page_lee" , 1 , {right: "0%" , delay:1}),
+			TweenMax.from(".info_text" , 1 , {transform:"scale(1.2)" , left:"0%" ,  opacity:0, delay:1}),
 		]);
 
 var info = new ScrollMagic.Scene({
@@ -208,11 +209,11 @@ var write = new ScrollMagic.Scene({
 var effect_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.from(".effect_page_behind" , 1 , {bottom:"-10%" , opacity:0, delay:8}),
-			TweenMax.from(".effect_page_between" , 1 , {left:"10%", opacity:0, delay:8}),
-			TweenMax.from(".effect_page_top" , 1 , {left:"10%", opacity:0, delay:8}),
+			TweenMax.from(".effect_page_behind" , 1 , {transform:"scale(0.8)" ,bottom:"-10%" , opacity:0, delay:8.3}),
+			TweenMax.from(".effect_page_between" , 1 , {left:"10%", opacity:0, delay:8.8}),
+			TweenMax.from(".effect_page_top" , 1 , {transform:"scale(1.2)" ,left:"10%", opacity:0, delay:8.5}),
 			TweenMax.from(".effect_page_lee" , 1 , {right:"-10%", opacity:0, delay:8}),
-			TweenMax.from(".effect_text" , 1 , { opacity:0, delay:8}),
+			TweenMax.from(".effect_text" , 1 , {transform:"scale(1.2)" , left:"0%" , opacity:0, delay:8}),
 		]);
 
 
