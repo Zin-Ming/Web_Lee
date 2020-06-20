@@ -8,8 +8,6 @@ $(window).on("load",function(){
 	
 	$('html , body').animate({scrollTop:0});
 	
-	$(".load").fadeOut("slow");
-	
 
 var index_leaf_anime = lottie.loadAnimation({
 	
