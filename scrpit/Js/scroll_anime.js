@@ -71,6 +71,25 @@ var filp = lottie.loadAnimation({
 	
 });
 
+var ink_anime = lottie.loadAnimation({
+	
+	container:document.getElementById('ink'),
+	path:'https://assets2.lottiefiles.com/packages/lf20_MsbrHT.json',
+	rederer:'svg',
+	loop:false,
+	autoplay:false,	
+	
+});
+	
+var info_brush = lottie.loadAnimation({
+	
+	container:document.getElementById('info_brush'),
+	path:'https://assets5.lottiefiles.com/packages/lf20_gqGBKv.json',
+	rederer:'svg',
+	loop:false,
+	autoplay:false,	
+	
+});
 
 
 
@@ -136,7 +155,8 @@ var index = new ScrollMagic.Scene({
 	$(".home_page_lee").addClass("fade_in");
 	$(".home_text").addClass("fade_in");
 	
-	
+	ink_anime.goToAndStop(ink_anime.firstFrame + 0 , true);
+	info_brush.goToAndStop(info_brush.firstFrame + 0 , true);
 })
 
 .on("leave" , function(){
@@ -150,6 +170,9 @@ var index = new ScrollMagic.Scene({
 	$(".home_page_right_banbom").removeClass("fade_in");
 	$(".home_page_lee").removeClass("fade_in");
 	$(".home_text").removeClass("fade_in");
+	
+	
+	
 })
 
 
@@ -161,10 +184,9 @@ var index = new ScrollMagic.Scene({
 var info_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.from(".info_page_behind" , 1 , { left: "10%", opacity:0 , delay:1}),
-			TweenMax.from(".info_page_front" , 1 , {transform:"scale(1.2)" , right: "0%", opacity:0, delay:1.2}),
-			TweenMax.from(".info_page_lee" , 1 , {right: "0%" , delay:1}),
-			TweenMax.from(".info_text" , 1 , {transform:"scale(1.2)" , left:"0%" ,  opacity:0, delay:1}),
+			TweenMax.from(".info_page_lee" , 1 , {right: "0%" , delay:0}),
+			TweenMax.from(".info_text" , 1 , { opacity:0}),
+			TweenMax.from(".info_bg" , 1 , { opacity:0}),
 		]);
 
 var info = new ScrollMagic.Scene({
@@ -173,11 +195,40 @@ var info = new ScrollMagic.Scene({
 	
 	triggerHook:'onLeave',
 	
-	duration:'250%',
+	duration:'100%',
+	
+	offset:'950',
+	
+})
+
+.on("enter" , function(){
+	
+	setTimeout(function(){
+		
+		ink_anime.setDirection(1);
+		ink_anime.play();
+		info_brush.setDirection(1);
+		info_brush.play();
+	
+	} , 1000);
 	
 })
 
 
+.on("leave" , function(){
+	
+		
+		ink_anime.setDirection(-1);
+		ink_anime.play();
+		info_brush.setDirection(-1);
+		info_brush.play();
+	
+})
+
+
+
+
+.addIndicators() 
 .setTween(info_pall)
 .addTo(controller);
 
@@ -185,7 +236,7 @@ var write_pall = new TimelineMax()
 	
 	.add([
 			TweenMax.from(".write_page_behind" , 1 , {top: "-5%" , opacity:0 , delay:2}),
-			TweenMax.from(".page_flex" , 1 , { opacity:0 , delay:2}),
+			TweenMax.from(".page" , 1 , { width:"17%" , opacity:0 , delay:1.5}),
 		]);
 
 
@@ -199,6 +250,7 @@ var write = new ScrollMagic.Scene({
 	duration:'400%',
 	
 })
+
 
 .setTween(write_pall)
 .addTo(controller);
@@ -227,6 +279,31 @@ var effect = new ScrollMagic.Scene({
 	duration:'500%',
 	
 })
+
+.on("enter" , function(){
+	
+		
+	brush_anime.setDirection(-1);
+		
+	brush_anime.play();
+		
+		
+	
+})
+
+
+.on("leave" , function(){
+	
+		
+	brush_anime.setDirection(1);
+		
+	brush_anime.play();
+		
+	
+})
+
+
+
 
 .setTween(effect_pall)
 .addTo(controller);
