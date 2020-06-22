@@ -305,8 +305,8 @@ var write = new ScrollMagic.Scene({
 var effect_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.from(".effect_page_bottom" , 1 , {transform:"scale(0.8)" ,bottom:"-10%" , opacity:0, delay:8.3}),
-			TweenMax.from(".effect_page_top" , 1 , {transform:"scale(1.2)" ,left:"10%", opacity:0, delay:8.5}),
+			TweenMax.from(".effect_page_bottom" , 1 , {transform:"scale(0.8)" , opacity:0, delay:8.3}),
+			TweenMax.from(".effect_page_top" , 1 , {transform:"scale(1.1)" , opacity:0, delay:8.5}),
 			TweenMax.from(".effect_text" , 1 , { opacity:0, delay:8}),
 		]);
 

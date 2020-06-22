@@ -84,7 +84,7 @@ html , body
 	width: 25%;
 	float: left;
 	background-color:#232323;
-	margin: auto;
+	margin: 0  auto;
 }
 
 .home_page
@@ -557,7 +557,6 @@ html , body
 	top: 25%;
 	left: 20%;
 	width: 60%;
-	height: 50%;
 	transition: all 0.5s ease-out;
 }
 
