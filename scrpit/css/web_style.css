@@ -663,14 +663,6 @@ html , body
 	}
 	
 	
-	.effect_text
-	{
-		top: 5%;
-		left: 5%;
-		width: 60%;
-	}
-	
-	
 	.effect_text h2
 	{
 		font-size: 12px;
@@ -681,13 +673,18 @@ html , body
 		font-size: 6px;
 	}
 	
+	#effect_brush
+	{
+		top: 15%;
+	}
+
+	
 	#filp
 	{
 		z-index: -200;
 		opacity: 0;
 	}
 	
-
 	
 	
 }
