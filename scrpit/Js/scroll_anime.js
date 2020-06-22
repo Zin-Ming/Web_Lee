@@ -183,7 +183,7 @@ var index = new ScrollMagic.Scene({
 	
 })
 
-.addIndicators() 
+//.addIndicators() 
 .setTween(index_pall)
 .addTo(controller);
 	
@@ -252,7 +252,7 @@ var info = new ScrollMagic.Scene({
 
 
 
-.addIndicators() 
+//.addIndicators() 
 .setTween(info_pall)
 .addTo(controller);
 
