@@ -84,7 +84,17 @@ var ink_anime = lottie.loadAnimation({
 var info_brush = lottie.loadAnimation({
 	
 	container:document.getElementById('info_brush'),
-	path:'https://assets5.lottiefiles.com/packages/lf20_gqGBKv.json',
+	path:'https://assets10.lottiefiles.com/packages/lf20_RDlW5M.json',
+	rederer:'svg',
+	loop:false,
+	autoplay:false,	
+	
+});
+	
+var effect_brush = lottie.loadAnimation({
+	
+	container:document.getElementById('effect_brush'),
+	path:'https://assets7.lottiefiles.com/packages/lf20_QFZojw.json',
 	rederer:'svg',
 	loop:false,
 	autoplay:false,	
@@ -140,7 +150,7 @@ var index = new ScrollMagic.Scene({
 	
 	triggerHook:'onLeave',
 	
-	duration:'50%',
+	duration:'80%',
 	
 })
 
@@ -154,9 +164,7 @@ var index = new ScrollMagic.Scene({
 	$(".home_page_right_banbom").addClass("fade_in");
 	$(".home_page_lee").addClass("fade_in");
 	$(".home_text").addClass("fade_in");
-	
-	ink_anime.goToAndStop(ink_anime.firstFrame + 0 , true);
-	info_brush.goToAndStop(info_brush.firstFrame + 0 , true);
+
 })
 
 .on("leave" , function(){
@@ -175,11 +183,10 @@ var index = new ScrollMagic.Scene({
 	
 })
 
-
+.addIndicators() 
 .setTween(index_pall)
 .addTo(controller);
-
-
+	
 
 var info_pall = new TimelineMax()
 	
@@ -188,6 +195,23 @@ var info_pall = new TimelineMax()
 			TweenMax.from(".info_text" , 1 , { opacity:0}),
 			TweenMax.from(".info_bg" , 1 , { opacity:0}),
 		]);
+	
+
+var width = 0;
+var off = 0;
+	
+if($(window).width() < 700){
+
+	width = 500;
+	off = 400;
+	
+}else{
+	
+	width = 800;
+	off = 900;
+	
+}
+
 
 var info = new ScrollMagic.Scene({
 	
@@ -195,9 +219,9 @@ var info = new ScrollMagic.Scene({
 	
 	triggerHook:'onLeave',
 	
-	duration:'100%',
+	duration:width,
 	
-	offset:'950',
+	offset:off,
 	
 })
 
@@ -251,6 +275,26 @@ var write = new ScrollMagic.Scene({
 	
 })
 
+.on("enter" , function(){
+	
+		
+	effect_brush.setDirection(-1);
+	effect_brush.play();
+	
+})
+
+
+.on("leave" , function(){
+	
+	setTimeout(function(){
+		
+	effect_brush.setDirection(1);
+	effect_brush.play();
+		
+	} , 1000);
+	
+})
+
 
 .setTween(write_pall)
 .addTo(controller);
@@ -261,11 +305,9 @@ var write = new ScrollMagic.Scene({
 var effect_pall = new TimelineMax()
 	
 	.add([
-			TweenMax.from(".effect_page_behind" , 1 , {transform:"scale(0.8)" ,bottom:"-10%" , opacity:0, delay:8.3}),
-			TweenMax.from(".effect_page_between" , 1 , {left:"10%", opacity:0, delay:8.8}),
+			TweenMax.from(".effect_page_bottom" , 1 , {transform:"scale(0.8)" ,bottom:"-10%" , opacity:0, delay:8.3}),
 			TweenMax.from(".effect_page_top" , 1 , {transform:"scale(1.2)" ,left:"10%", opacity:0, delay:8.5}),
-			TweenMax.from(".effect_page_lee" , 1 , {right:"-10%", opacity:0, delay:8}),
-			TweenMax.from(".effect_text" , 1 , {transform:"scale(1.2)" , left:"0%" , opacity:0, delay:8}),
+			TweenMax.from(".effect_text" , 1 , { opacity:0, delay:8}),
 		]);
 
 
@@ -279,30 +321,6 @@ var effect = new ScrollMagic.Scene({
 	duration:'500%',
 	
 })
-
-.on("enter" , function(){
-	
-		
-	brush_anime.setDirection(-1);
-		
-	brush_anime.play();
-		
-		
-	
-})
-
-
-.on("leave" , function(){
-	
-		
-	brush_anime.setDirection(1);
-		
-	brush_anime.play();
-		
-	
-})
-
-
 
 
 .setTween(effect_pall)
@@ -355,3 +373,4 @@ $('.chapter_bg').click(function(){
 	
 	
 });
+

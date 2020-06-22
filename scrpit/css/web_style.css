@@ -207,6 +207,7 @@ html , body
 {
 	position: absolute;
 	top: 10%;
+	opacity: 0.8;
 }
 
 
@@ -305,11 +306,11 @@ html , body
 {
 	position: absolute;
 	margin: 0;
-	width: 150%;
-	height: 150%;
+	width: 100%;
+	height: 100%;
 	background-color: #525252;
 	opacity: 0;
-	z-index: -5;
+	z-index: -1;
 	transition: all 0.6s ease-out;
 }
 
@@ -524,44 +525,39 @@ html , body
 }
 
 
-.effect_page_behind
+.effect_page_bottom
 {
 	position: absolute;
-	bottom: 0%;
+	bottom: -5%;
 	opacity: 1;
 	transition: all 0.6s ease-out;
-}
-
-.effect_page_between
-{
-	position: absolute;
-	left: 30%;
-	bottom: 5%;
-	transition: all 1s ease-out;
 }
 
 .effect_page_top
 {
 	position: absolute;
-	left: 30%;
-	top: 5%;
+	left: -10%;
+	top: 40%;
+	opacity: 0.5;
 	transition: all 0.5s ease-out;
 }
 
-.effect_page_lee
+#effect_brush
 {
 	position: absolute;
-	right: 5%;
-	bottom: 0%;
+	width: 50%;
+	right: -8%;
+	top: -10%;
 }
+
 
 .effect_text
 {
 	position: absolute;
-	top: 10%;
-	left: 10%;
-	width: 50%;
-	height: 70%;
+	top: 25%;
+	left: 20%;
+	width: 60%;
+	height: 50%;
 	transition: all 0.5s ease-out;
 }
 
