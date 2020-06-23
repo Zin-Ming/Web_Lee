@@ -372,5 +372,65 @@ $('.chapter_bg').click(function(){
 });
 	
 	
+/*----- RWD page Btn------*/	
+/*----- RWD page Btn------*/	
+/*----- RWD page Btn------*/	
+	
+if($(window).width() < 700){
+	
+	$('.btn_left').click(function(){
+	
+	if($(window).scrollTop() < 700){
+		
+		$('html, body').animate({
+		
+         	scrollTop : '0px'
+			
+		}, 600);
+		
+		
+	}else{
+		
+		$('html, body').animate({
+		
+         	scrollTop: '-=620px'
+         
+		}, 600);
+	
+	}
+	
+});
+	
+	
+$('.btn_right').click(function(){
+	
+	$('html, body').animate({
+		
+         scrollTop: '+=650px'
+         
+	}, 600);
+	
+});
+	
+}
+	
 });
 
+$(window).resize(function(){
+	
+	location.reload();
+	
+});
+
+var btn =  new TimelineMax()
+
+.add([
+	
+	TweenMax.from(".btn_left" , 2 , {opacity:0 , repeat:-1 , yoyo:true,}),
+	TweenMax.from(".btn_right" , 2 , {opacity:0 , repeat:-1 , yoyo:true,}),
+	
+]);
+
+/*----- RWD page Btn------*/	
+/*----- RWD page Btn------*/	
+/*----- RWD page Btn------*/

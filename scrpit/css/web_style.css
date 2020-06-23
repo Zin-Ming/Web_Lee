@@ -70,12 +70,36 @@ html , body
 	margin: auto;
 }
 
-
 .index_flex
 {
 	width: 400%;
 	height: 100%;
+	position: relative;
 }
+
+.btn_left
+{
+	position: absolute;
+	width: 6%;
+	left: 0;
+	bottom: 0%;
+	z-index: 500;
+	display: none;
+	transform: rotateY(180deg);
+	opacity: 0.4;
+}
+
+.btn_right
+{
+	position: absolute;
+	width: 6%;
+	right: 0;
+	bottom: 0%;
+	z-index: 500;
+	display: none;
+	opacity: 0.4;
+}
+
 
 
 .plane
@@ -85,6 +109,7 @@ html , body
 	float: left;
 	background-color:#232323;
 	margin: 0  auto;
+	position: relative;
 }
 
 .home_page
@@ -291,6 +316,14 @@ html , body
 	writing-mode:vertical-lr;
 	width: 100%;
 	font-size: 30px;
+}
+
+.btn
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0 auto;
 }
 
 .chapter
@@ -633,6 +666,11 @@ html , body
 		margin: 0 auto;
 	}
 	
+	.page p
+	{
+		font-size: 18px;
+	}
+	
 	.chapter
 	{
 		width: 30%;
@@ -662,7 +700,6 @@ html , body
 		margin: 0 auto;
 	}
 	
-	
 	.effect_text h2
 	{
 		font-size: 12px;
@@ -678,11 +715,20 @@ html , body
 		top: 15%;
 	}
 
-	
 	#filp
 	{
 		z-index: -200;
 		opacity: 0;
+	}
+	
+	.btn_left
+	{
+		display: block;
+	}
+	
+	.btn_right
+	{
+		display: block;
 	}
 	
 	
@@ -696,6 +742,7 @@ html , body
 		z-index: 500;
 		opacity: 1;
 	}
+	
 }
 
 
