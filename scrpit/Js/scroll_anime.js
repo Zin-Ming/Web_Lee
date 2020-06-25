@@ -378,6 +378,8 @@ $('.chapter_bg').click(function(){
 	
 if($(window).width() < 700){
 	
+	$('body').addClass('noscroll');
+	
 	$('.btn_left').click(function(){
 	
 	if($(window).scrollTop() < 700){

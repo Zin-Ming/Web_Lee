@@ -59,6 +59,11 @@ html , body
 	letter-spacing: 3px;
 }
 
+.noscroll
+{
+	overflow-y: hidden;
+}
+
 
 .index
 {
